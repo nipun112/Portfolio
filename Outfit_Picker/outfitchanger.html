@@ -1,0 +1,73 @@
+<html>
+
+<head>
+   
+    
+    
+    <script>
+    
+    var topCounter=0;
+    var bottomCounter=0;
+        
+    function changetop(){
+        
+        if(topCounter==3)(topCounter=0)
+        
+        topCounter=topCounter+1
+        
+        var shirts = ["boys/shirt1.jpg", "boys/shirt2.jpg", "boys/shirt3.jpg", "boys/shirt4.jpg"];
+        
+        document.getElementById("shirt").src=shirts[topCounter];
+       
+    }
+    
+    function changebottom(){
+        
+        if(bottomCounter==3)(bottomCounter=0)
+        
+        bottomCounter=bottomCounter+1
+        
+        var pants=["boys/pant1.jpg", "boys/pant2.jpg", "boys/pant3.jpg", "boys/pant4.jpg"];
+        
+        document.getElementById("pant").src=pants[bottomCounter];
+        
+        
+    }
+    
+    
+    
+    
+    </script>
+    </head>
+
+
+<body> 
+   <style>
+       body{background-color: black}
+    
+    </style> 
+   
+    
+    <center><img id= "shirt" src= "boys/shirt1.jpg" height="275" width="290"></center> 
+    <center><button id= "top" onClick= "changetop()">Next</button>
+    
+    <br/>
+    
+    <center><img id="pant" src="boys/pant1.jpg" height="275" width="290"></center>    
+    <center><button id= "bottom" onClick= "changebottom()">Next</button></center>
+    
+    </center>
+    
+   <img src="desktop/gif2" alt="Computer man" style="width:48px;height:48px;">
+
+    </body>
+
+    
+    
+    
+    
+    
+    
+    
+
+</html>
